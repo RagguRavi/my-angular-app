@@ -1,4 +1,8 @@
-<div class="col-12"><app-navbar></app-navbar></div>
+@if (isLoggedIn) {
+<app-navbar></app-navbar>
+}
 <div class="container-fluid p-5 text-center">
     <h1>Hello world!</h1>
+    <a routerLink="/guest">Guest</a>
+    <router-outlet />
 </div>
